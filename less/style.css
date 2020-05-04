@@ -133,9 +133,6 @@ body {
   outline: none;
   text-decoration: none;
 }
-.header-menu-nav-item:last-child {
-  padding: 0;
-}
 .header-menu-nav-item:hover {
   color: #c7b299;
   cursor: pointer;
@@ -160,106 +157,86 @@ body {
 .header-menu-nav-basket:active svg {
   fill: #fff;
 }
-.header-menu-nav-form {
-  width: 24px;
-  height: 24px;
+.header-menu-nav-search {
   margin: 0 0 0 28px;
-  position: relative;
-}
-.header-menu-nav-form-label {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url('../img/icon-search.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-.header-menu-nav-form-search {
-  width: 0;
-  min-height: 0;
-  padding: 5px;
   outline: none;
-  box-sizing: border-box;
-  background-color: transparent;
   border: none;
-  position: absolute;
-  top: 40px;
-  left: -119px;
-  color: #fff;
-  font-size: 16px;
-  font-family: Arial;
-  text-transform: capitalize;
+  font-family: Montserrat;
+  font-weight: 300;
+  border-radius: 5px;
+  background: none;
+  background-image: url("../img/icon-search.svg");
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.header-menu-nav-form-label:hover {
+.header-menu-nav-search::-webkit-search-decoration,
+.header-menu-nav-search::-webkit-search-cancel-button,
+.header-menu-nav-search::-webkit-search-results-button,
+.header-menu-nav-search::-webkit-search-results-decoration {
+  margin-right: 35px;
+  background: #c7b299;
+}
+.header-menu-nav-search:focus {
+  padding: 5px;
+  width: 200px;
+  transition: width 1s ease-out;
+  background-position: right;
+  background-color: #ffffff;
+  background-image: url("../img/icon-search-select.svg");
+}
+.header-menu-nav-search:hover {
+  background-image: url("../img/icon-search-select.svg");
   cursor: pointer;
-  background-image: url('../img/icon-search-select.svg');
-}
-.header-menu-nav-form-search:focus {
-  width: 150px;
-  min-height: 20px;
-  transition: width 1s ease;
-  border: 2px solid #fff;
-  border-radius: 3px;
 }
 .header-caroucel {
   width: 100%;
-  min-height: 931px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  position: relative;
 }
 .header-caroucel-left {
-  display: block;
   width: 40px;
   height: 73px;
-  position: relative;
-  margin: 0 0px 0 150px;
+  margin: 379px 0 0 150px;
+  background: none;
+  border: none;
+  background-image: url("../img/left.svg");
+  outline: none;
 }
-.header-caroucel-left:after {
-  content: "";
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
-  transform: rotate(225deg);
-  position: absolute;
-  top: 10px;
-  left: 0px;
+.header-caroucel-left:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
-.header-caroucel-left:hover:after {
-  border-top: 2px solid orange;
-  border-right: 2px solid orange;
-}
-.header-caroucel-left:active:after {
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
+.header-caroucel-left:active {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 .header-caroucel-body {
   margin: 0 auto;
+  margin-top: 302px;
   text-align: center;
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
 }
 .header-caroucel-body-h2 {
-  display: block;
   color: #ffffff;
   font-family: Raleway;
   font-size: 36px;
   font-weight: 500;
 }
 .header-caroucel-body-h1 {
-  display: block;
   color: #ffffff;
   font-family: "Raleway";
   font-size: 52px;
   font-weight: 600;
 }
 .header-caroucel-body-p {
-  display: block;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 16px;
@@ -267,8 +244,6 @@ body {
   line-height: 24px;
 }
 .header-caroucel-body-button {
-  margin: 0 auto;
-  display: block;
   border: none;
   width: 170px;
   outline: none;
@@ -286,201 +261,19 @@ body {
   line-height: 14px;
   text-transform: uppercase;
 }
-.header-caroucel-body-button:hover {
-  box-shadow: inset 0 -3px 0 #ffffff;
-}
-.header-caroucel-body-button:active {
-  box-shadow: inset 0 -3px 0 #736357;
-}
 .header-caroucel-right {
   width: 40px;
   height: 73px;
-  position: relative;
-  margin: 0 150px 0 0;
-}
-.header-caroucel-right:after {
-  content: "";
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 10px;
-  left: 0px;
-}
-.header-caroucel-right:hover:after {
-  border-top: 2px solid orange;
-  border-right: 2px solid orange;
-}
-.header-caroucel-right:active:after {
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
-}
-.header-caroucel-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  padding: 5px 0 40px 0;
-  position: absolute;
-  bottom: 0;
-  margin: auto;
-}
-.header-caroucel-pagination-item {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  border-radius: 50%;
-  background-color: #d3c1ad;
-}
-.header-caroucel-pagination-item-active {
+  margin: 379px 0 0 150px;
   background: none;
-  border: 1px solid #d3c1ad;
-  cursor: default;
+  border: none;
+  background-image: url("../img/right.svg");
+  outline: none;
 }
-.header-caroucel-pagination-item:hover {
-  background: none;
-  border: 1px solid #d3c1ad;
+.header-caroucel-right ~ input {
+  margin: 875px 0 42px 0px;
+  align-self: center;
 }
-.services {
-  width: 100%;
-  padding: 80px 0 80px 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-.services-item {
-  width: 266px;
-  text-align: center;
-  margin-right: 33px;
-}
-.services-item-image {
-  margin: 0 auto;
-  display: block;
-  fill: #555;
-  height: 50px;
-}
-.services-item-name {
-  display: block;
-  color: #555555;
-  font-family: "Raleway";
-  font-size: 22px;
-  font-weight: 600;
-  margin: 30px 0 0 0;
-}
-.services-item-p {
-  color: #8c8c8c;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 19px 0 30px 0;
-}
-.services-item:after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  background-color: #f1eee9;
-  margin: 0 auto;
-  align-self: flex-end;
-}
-.services-item:hover {
-  cursor: pointer;
-}
-.services-item:hover .services-item-image {
-  fill: #c7b299;
-}
-.services-item:hover .services-item-name {
-  color: #c7b299;
-}
-.services-item:hover:after {
-  background-color: #c7b299;
-}
-.services-item:last-child {
-  margin: 0;
-}
-.ideas {
-  width: 100%;
-  background-color: #fbfaf8;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  background-image: url("../img/backgroung-ideas.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-}
-.ideas-head {
-  margin: 83px 0 0 0;
-  width: 100%;
-  color: #555555;
-  font-family: "Raleway";
-  font-size: 30px;
-  font-weight: 600;
-}
-.ideas-p {
-  margin: 24px 0 522px 0;
-  width: 756px;
-  color: #8c8c8c;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-}
-.reklama {
-  padding: 48px 0 48px 0;
-  width: 100%;
-  background-color: #f4f5f8;
-  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
-  display: flex;
-  justify-content: center;
-}
-.reklama-text {
-  margin: 0 470px 0 0;
-}
-.reklama-h2 {
-  color: #ffffff;
-  font-family: Raleway;
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0;
-}
-.reklama-h2-color {
-  color: #c7b299;
-}
-.reklama-p {
-  color: #615855;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 0;
-}
-.reklama-button {
-  display: block;
-  width: 170px;
-  margin: 0;
-  box-shadow: inset 0 -3px 0 #736357;
-  border-radius: 3px;
-  background-color: #998675;
-  padding: 20px 0 20px 0;
-  text-align: center;
-  text-decoration: none;
-}
-.reklama-button-text {
-  color: #ffffff;
-  font-family: "Raleway";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 23px;
-  text-transform: uppercase;
-}
-.reklama-button:hover {
-  box-shadow: inset 0 -3px 0 #ffffff;
-}
-.reklama-button:active {
-  box-shadow: inset 0 -3px 0 #736357;
+.header-caroucel-right ~ input:first-child {
+  margin-left: 10px;
 }
