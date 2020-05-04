@@ -484,3 +484,200 @@ body {
 .reklama-button:active {
   box-shadow: inset 0 -3px 0 #736357;
 }
+.latest {
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.latest-h {
+  margin: 81px 0 0 0;
+  width: 100%;
+  color: #555555;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.latest-p {
+  width: 100%;
+  margin: 24px 580px 0 580px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+.latest-button-group {
+  width: 100%;
+  margin: 40px 0 40px 0;
+  text-align: center;
+}
+.latest-button-group-button {
+  min-width: 70px;
+  margin: 0 10px 0 0;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: transparent;
+  padding: 10px 21px 10px 21px;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  outline: none;
+}
+.latest-button-group-button:last-child {
+  margin: 0;
+}
+.latest-button-group-button:hover {
+  cursor: pointer;
+  background-color: #998675;
+  color: #ffffff;
+}
+.latest-button-group-button:active {
+  background-color: transparent;
+  color: #8c8c8c;
+}
+.latest-project {
+  text-decoration: none;
+  margin: 0 30px 30px 0;
+  width: 370px;
+  padding: 0;
+  position: relative;
+}
+.latest-project-image {
+  margin: 0;
+}
+.latest-project-text {
+  width: 340px;
+  margin: -5px 0 0 0;
+  background-color: #fbfaf8;
+  padding: 30px 0 27px 30px;
+  position: relative;
+}
+.latest-project-text:before {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 0 15px 10px 15px;
+  border-color: transparent transparent #fbfaf8 transparent;
+  position: absolute;
+  top: -10px;
+  left: 19px;
+}
+.latest-project-head {
+  display: block;
+  width: 100%;
+  color: #c7b299;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.latest-project-work {
+  display: block;
+  width: 100%;
+  color: #d1d1d1;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 14px 0 0 0;
+}
+.latest-project-link,
+.latest-project-search {
+  width: 26px;
+  height: 26px;
+  display: none;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 35%;
+  padding: 0;
+}
+.latest-project-link {
+  cursor: pointer;
+  background-image: url(../img/link.svg);
+  left: 40%;
+}
+.latest-project-link:hover {
+  background-image: url(../img/link-select.svg);
+}
+.latest-project-link:active {
+  background-image: url(../img/link.svg);
+}
+.latest-project-search {
+  background-image: url(../img/lupa.svg);
+  right: 40%;
+}
+.latest-project-search:hover {
+  cursor: pointer;
+  background-image: url(../img/lupa-select.svg);
+}
+.latest-project-search:active {
+  background-image: url(../img/lupa.svg);
+}
+.latest-project:hover .latest-project-text {
+  background-color: #362f2d;
+}
+.latest-project:hover .latest-project-text:before {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 0 15px 10px 15px;
+  border-color: transparent transparent #362f2d transparent;
+  position: absolute;
+  top: -10px;
+  left: 19px;
+}
+.latest-project:hover .latest-project-head {
+  color: #ffffff;
+}
+.latest-project:hover .latest-project-work {
+  color: #c7b299;
+}
+.latest-project:hover .latest-project-image {
+  filter: brightness(20%);
+}
+.latest-project:hover .latest-project-link {
+  display: block;
+}
+.latest-project:hover .latest-project-search {
+  display: block;
+}
+.latest-break {
+  width: 100%;
+}
+.latest-button {
+  border: none;
+  display: block;
+  width: 170px;
+  height: 50px;
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  outline: none;
+}
+.latest-button-text {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.latest-button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -3px 0 #ffffff;
+}
+.latest-button:active {
+  cursor: pointer;
+  box-shadow: inset 0 -3px 0 #736357;
+}
