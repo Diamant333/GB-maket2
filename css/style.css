@@ -1351,12 +1351,7 @@ body {
   .header-menu-logo {
     margin: 20px 0 20px 20px;
   }
-  .header-menu-logo svg {
-    width: ;
-    height: ;
-  }
   .header-menu-logo-text {
-    font-size: ;
     letter-spacing: normal;
   }
   .header-menu-nav {
@@ -1425,10 +1420,6 @@ body {
     font-size: 10px;
     line-height: 1.5;
     margin-bottom: 20px;
-  }
-  .services-item svg {
-    width: ;
-    height: ;
   }
   .ideas {
     display: none;
