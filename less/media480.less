@@ -131,6 +131,9 @@
                 //width: 100%;
             }
         }
+        &-button {
+            margin: 20px 0 20px 0;
+        }
     }
 
     .presentation {
@@ -151,7 +154,7 @@
     }
 
     .mobile {
-        padding: 30px 20px 100px 20px;
+        padding: 30px 20px 150px 20px;
         background-position: 20px bottom;
         background-size: 200px;
         //display: none;
@@ -163,12 +166,20 @@
            width: 100%;
            font-size: 12px;
            margin: 0 0 0 0;
+           line-height: normal;
        }
        &-list {
            display: block;
-            margin: 0 0 0 215px;
+            margin: 0 0 0 180px;
         &-item {
+            display: block;
             font-size: 10px;
+            line-height: normal;
+            margin: 20px 0 0 0;
+            &:before {
+                top: -5px;
+                left: -25px;
+            }
         }
        }
     }
@@ -191,13 +202,43 @@
             //width: 100%;
             margin: 40px 0 0 0;
         }
+        &-but {
+            display: none;
+            &-unactive {
+                display: none;
+            }
+        }
     }
 
     .partners {
-        display: none;
+        //display: none;
+        padding: 20px 0 20px 0;
+        width: 100%;
+        &-link {
+            margin: 0 15px 0 0;
+            width: 20%;
+            &-logo {
+               width: 100%;
+            }
+        }
     }
 
     .footer {
-        display: none;
+        &-info {
+           display: none; 
+        }
+        &-copyright {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 0 20px 0;
+            &-breack {
+                width: 100%;
+            }
+            &-link {
+                font-size: 10px;
+                margin: 20px 0 0 0;
+            }
+        }
+        
     }
 }
